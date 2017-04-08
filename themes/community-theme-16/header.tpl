@@ -19,6 +19,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}" />
   <link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}" />
+  <link rel="stylesheet" href="/themes/community-theme-16/fonts/proxima-nova/stylesheet.css" type="text/css" />
   {if isset($css_files)}
     {foreach from=$css_files key=css_uri item=media}
       {if $css_uri == 'lteIE9'}
@@ -32,6 +33,7 @@
       {/if}
     {/foreach}
   {/if}
+  <link rel="stylesheet" href="/themes/community-theme-16/css/robotseed.css" type="text/css" />
   {if isset($js_defer) && !$js_defer && isset($js_files) && isset($js_def)}
     {$js_def}
     {foreach from=$js_files item=js_uri}
@@ -45,6 +47,7 @@
   <![endif]-->
 </head>
 <body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if} class="{if isset($page_name)}{$page_name|escape:'html':'UTF-8'}{/if}{if isset($body_classes) && $body_classes|@count} {implode value=$body_classes separator=' '}{/if}{if $hide_left_column} hide-left-column{else} show-left-column{/if}{if $hide_right_column} hide-right-column{else} show-right-column{/if}{if isset($content_only) && $content_only} content_only{/if} lang_{$lang_iso}">
+TETSTOTEST
 {if !isset($content_only) || !$content_only}
 
 {if isset($restricted_country_mode) && $restricted_country_mode}
